@@ -1,15 +1,7 @@
-import {
-  Box,
-  Button,
-  Flex,
-  Heading,
-  SimpleGrid,
-  Stack,
-  Text,
-} from "@chakra-ui/react";
-import ResponsinveImage from "../ResponsinveImage";
-import { useNavigate } from "react-router-dom";
+import { Box, Button, Heading, Stack, Text } from "@chakra-ui/react";
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
+import ResponsinveImage from "../ResponsinveImage";
 
 const ProductGrid = () => {
   const navigate = useNavigate();

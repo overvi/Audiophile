@@ -18,7 +18,7 @@ const BuyModal = () => {
           You will receive an email confirmation shortly.
         </Text>
         <Flex className="items-center justify-between py-5  flex-col gap-5">
-          {[...uniqueCheckOut].map((product, index) => (
+          {[...uniqueCheckOut].map((product) => (
             <>
               <Box className="flex  gap-3 justify-between  w-full">
                 <Box className="flex gap-5">

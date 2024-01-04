@@ -1,6 +1,6 @@
-import { Heading, Image, SimpleGrid, Stack, Text } from "@chakra-ui/react";
-import bestGear from "/images/shared/desktop/image-best-gear.jpg";
+import { Heading, Image, Stack, Text } from "@chakra-ui/react";
 import { motion } from "framer-motion";
+import bestGear from "/images/shared/desktop/image-best-gear.jpg";
 
 const Testemonial = () => {
   return (

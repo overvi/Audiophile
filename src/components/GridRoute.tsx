@@ -1,8 +1,7 @@
 import { Box, Heading, SimpleGrid, Text } from "@chakra-ui/react";
-import { details } from "../types";
-import ResponsinveImage from "./ResponsinveImage";
-import data from "../data.json";
 import { ReactNode } from "react";
+import data from "../data.json";
+import ResponsinveImage from "./ResponsinveImage";
 
 export interface Props {
   data: (typeof data.products)[0];

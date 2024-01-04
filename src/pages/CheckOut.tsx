@@ -57,7 +57,7 @@ const CheckOut = () => {
               id="form"
               action=""
               className="space-y-10"
-              onSubmit={handleSubmit((e) => {
+              onSubmit={handleSubmit(() => {
                 (
                   document.getElementById("my_modal_form") as HTMLDialogElement
                 ).showModal();
@@ -224,7 +224,7 @@ const CheckOut = () => {
                   Nothing Here
                 </Text>
               )}
-              {[...uniqueCheckOut].map((product, index) => (
+              {[...uniqueCheckOut].map((product) => (
                 <>
                   <Box className="flex  gap-3 justify-between  w-full">
                     <Box className="flex gap-5">
