@@ -13,21 +13,25 @@ import { links } from "../props";
 import { useState } from "react";
 import Cart from "./Cart";
 import { useCheckout } from "../zuatand/product";
+import DropDown from "./DropDown";
 
 const NavBar = () => {
   const [showCart, setShowCart] = useState(false);
   const { checkOut } = useCheckout();
+
   return (
     <>
       <nav className="p-8 pb-0 flex justify-between bg-[#191919] ">
         <Container maxW="70rem " className="border-b pb-9 border-b-gray-800">
           <Flex align="center" justify="space-between" gap={5}>
             <Flex align="center" gap={5}>
-              <Image
-                className="block lg:hidden "
-                src={dropDown}
-                cursor="pointer"
-              />
+              <label htmlFor="my_modal_mobile">
+                <Image
+                  className="block lg:hidden "
+                  src={dropDown}
+                  cursor="pointer"
+                />
+              </label>
               <Image cursor="pointer" src={logo} />
             </Flex>
             <NavLinks className="hidden lg:flex" />
@@ -48,6 +52,7 @@ const NavBar = () => {
         </Container>
       </nav>
       {showCart && <Cart />}
+      <DropDown />
     </>
   );
 };

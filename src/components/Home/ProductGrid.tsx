@@ -50,13 +50,22 @@ const ProductGrid = () => {
         viewport={{ once: true }}
         className="flex items-center"
       >
-        <picture className="rounded-lg w-full">
-          <ResponsinveImage
-            src="/home/image-speaker-zx7.jpg"
+        <picture className="rounded-lg w-full ">
+          <source
+            media="(min-width : 62rem)"
+            srcSet="images/home/desktop/image-speaker-zx7.jpg"
+          />
+          <source
+            media="(min-width : 32rem)"
+            srcSet="images/home/tablet/image-speaker-zx7.jpg"
+          />
+          <img
             className="rounded-lg w-full"
+            src="images/home/mobile/image-speaker-zx7.jpg"
           />
         </picture>
-        <Stack className="absolute px-16" spacing={6}>
+
+        <Stack className="absolute  px-16" spacing={6}>
           <Heading>ZX7 Speaker</Heading>
           <Button
             onClick={() => navigate("/speakers/zx7-speaker")}

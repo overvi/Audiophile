@@ -6,10 +6,11 @@ const Header = () => {
   return (
     <Box className=" space-y-16 flex-col lg:flex-row  flex bg-[#191919] relative justify-evenly">
       <motion.div
+        viewport={{ once: true }}
         initial={{ opacity: 0, scale: 0, translateX: "-100%" }}
         animate={{ opacity: 1, scale: 1, translateX: "0%" }}
         transition={{ duration: 1.5 }}
-        className="space-y-6 absolute lg:static self-center pt-[5rem] text-center lg:text-left "
+        className="space-y-6 z-50 absolute lg:static self-center pt-[5rem] text-center lg:text-left "
       >
         <Heading
           letterSpacing={9}
@@ -33,6 +34,7 @@ const Header = () => {
         </Button>
       </motion.div>
       <motion.picture
+        viewport={{ once: true }}
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 5 }}
