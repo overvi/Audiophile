@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .navItem {
+    @apply cursor-pointer uppercase  text-white;
+  }
+}
+
+.pattern {
+  background-image: url("/images/home/desktop/pattern-circles.svg");
+}
+
+@media (width > 62rem) {
+  .XX59 {
+    order: 1;
+  }
+}
