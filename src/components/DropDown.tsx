@@ -1,4 +1,3 @@
-import { Box } from "@chakra-ui/react";
 import ProductCardStack from "./Home/ProductCard";
 
 const DropDown = () => {
