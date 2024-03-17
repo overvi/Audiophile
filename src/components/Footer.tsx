@@ -21,7 +21,7 @@ const Footer = () => {
           demo facility - we’re open 7 days a week.
         </Text>
         <Text className="text-gray-400">
-          Copyright 2021. All Rights Reserved
+          Copyright 2024. Ali028 All Rights Reserved
         </Text>
       </Stack>
       <Box className="mt-14 flex items-center justify-evenly  flex-col">
